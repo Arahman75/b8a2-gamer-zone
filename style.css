@@ -70,20 +70,19 @@ nav {
     align-items: center;
 }
 
-.nav-logo img {
+.nav-logo img,
+.footer-logo img {
     width: 86px;
     height: 40px;
     object-fit: cover;
     margin-right: 1.25rem;
 }
 
-.nav-logo h3 {
+.nav-logo h3,
+.footer-logo h3 {
     text-align: center;
-    font-family: Work Sans;
     font-size: 45px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
 ul {
@@ -410,8 +409,61 @@ ul a {
 
 /* favorite game style end here */
 
+/* footer style start here */
+footer {
+    background: #0B0223;
+    padding: 50px 0;
+    color: #FFF;
+}
 
-/* optional style end here */
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .link-items {
+    display: flex;
+    margin: 20px 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social-icons span {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+footer .link-items p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+footer .gray-color>p {
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.copy-right {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* footer style end here */
+
 /* responsive design start here */
 /* mobile device */
 @media screen and (max-width: 668px) {
@@ -484,6 +536,17 @@ ul a {
     .relative-img,
     .optional-relative-img {
         width: 150px;
+    }
+
+    footer .link-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    footer .link-items p {
+
+        margin-top: 20px;
     }
 }
 

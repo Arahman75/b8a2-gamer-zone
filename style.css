@@ -288,7 +288,86 @@ ul a {
 
 /*play gamer style end here */
 
-/* gamer style end here */
+/* optional style start here */
+.play-optional-container {
+    display: flex;
+}
+
+.play-optional-img {
+    width: 50%;
+    min-height: 400px;
+    position: relative;
+}
+
+.play-optional-img img {
+    width: 90%;
+    height: 100%;
+    margin-right: 50px;
+}
+
+.optional-relative-img {
+    width: 200px;
+    position: absolute;
+    bottom: -50px;
+    right: -20px;
+}
+
+.optional-info {
+    width: 50%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.optional-box {
+    width: 70%;
+}
+
+/* career style start here */
+.career {
+    margin: 100px 0 50px 0;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+
+.career-info {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.career-info-title,
+.career-info-description {
+    color: #FFF;
+}
+
+.career-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.career-details p {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.details-box-two {
+    text-align: end;
+}
+
+.white-btn {
+    color: #F948B2;
+    background-color: #FFF;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+/* career style end here */
+
+/* optional style end here */
 /* responsive design start here */
 /* mobile device */
 @media screen and (max-width: 668px) {
@@ -296,11 +375,13 @@ ul a {
     .nav-container,
     .banner-container,
     .gamer-container,
-    .play-gamer-container {
+    .play-gamer-container,
+    .play-optional-container {
         flex-direction: column;
     }
 
-    .banner-container {
+    .banner-container,
+    .play-optional-container {
         flex-direction: column-reverse;
     }
 
@@ -330,7 +411,9 @@ ul a {
     }
 
     .gamer-info,
-    .play-gamer-info {
+    .play-gamer-info,
+    .optional-info,
+    .career-info {
         width: 100%;
         justify-content: center;
         padding: 40px;
@@ -348,12 +431,14 @@ ul a {
         margin: 0 auto;
     }
 
-    .play-gamer-img {
+    .play-gamer-img,
+    .play-optional-img {
         width: 80%;
         margin-left: 40px;
     }
 
-    .relative-img {
+    .relative-img,
+    .optional-relative-img {
         width: 150px;
     }
 }
@@ -364,7 +449,8 @@ ul a {
         width: 80%;
     }
 
-    .banner-container {
+    .banner-container,
+    .play-optional-container {
         flex-direction: column;
         flex-direction: column-reverse;
     }
@@ -391,7 +477,9 @@ ul a {
     }
 
     .gamer-info,
-    .play-gamer-info {
+    .play-gamer-info,
+    .optional-info,
+    .career-info {
         width: 100%;
         justify-content: center;
         padding: 50px;
@@ -403,7 +491,8 @@ ul a {
         margin: 0 auto;
     }
 
-    .play-gamer-img {
+    .play-gamer-img,
+    .play-optional-img {
         width: 80%;
         margin-left: 40px;
     }

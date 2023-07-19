@@ -220,7 +220,35 @@ ul a {
     margin-left: 400px;
 }
 
-/* gamer style start here */
+/* gamer style end here */
+
+/*online gamer style start here */
+.online-gamer-container {
+    margin: 50px 0;
+}
+
+.online-gamer-info {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.online-gamer-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.online-gamer-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0B0223;
+}
+
+/*online gamer style end here */
 
 /* gamer style end here */
 /* responsive design start here */
@@ -235,6 +263,11 @@ ul a {
 
     .banner-container {
         flex-direction: column-reverse;
+    }
+
+    .online-gamer-cards {
+        grid-template-columns: 1fr;
+        padding: 30px;
     }
 
     .nav-logo {
@@ -289,6 +322,11 @@ ul a {
 
     .gamer-container {
         flex-direction: column;
+    }
+
+    .online-gamer-cards {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px;
     }
 
     .banner-info {

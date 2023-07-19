@@ -43,7 +43,6 @@ section {
 .linear-title {
     font-size: 48px;
     font-weight: 700;
-    /* background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%); */
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -242,13 +241,52 @@ ul a {
     width: 100%;
 }
 
-.online-gamer-title {
+.gamer-title {
     font-size: 48px;
     font-weight: 700;
     color: #0B0223;
 }
 
 /*online gamer style end here */
+/*play gamer style start here */
+.play-gamer-container {
+    display: flex;
+    margin: 50px 0 100px 0;
+}
+
+.play-gamer-info {
+    width: 50%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: end;
+}
+
+.play-gamer-box {
+    width: 60%;
+}
+
+.play-gamer-img {
+    width: 50%;
+    min-height: 400px;
+    position: relative;
+}
+
+.play-gamer-img img {
+    width: 90%;
+    margin-left: 50px;
+
+}
+
+.relative-img {
+    width: 200px;
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+}
+
+/*play gamer style end here */
 
 /* gamer style end here */
 /* responsive design start here */
@@ -257,7 +295,8 @@ ul a {
 
     .nav-container,
     .banner-container,
-    .gamer-container {
+    .gamer-container,
+    .play-gamer-container {
         flex-direction: column;
     }
 
@@ -290,7 +329,8 @@ ul a {
         justify-content: center;
     }
 
-    .gamer-info {
+    .gamer-info,
+    .play-gamer-info {
         width: 100%;
         justify-content: center;
         padding: 40px;
@@ -307,6 +347,15 @@ ul a {
         padding-top: 10px;
         margin: 0 auto;
     }
+
+    .play-gamer-img {
+        width: 80%;
+        margin-left: 40px;
+    }
+
+    .relative-img {
+        width: 150px;
+    }
 }
 
 /* tablet device */
@@ -320,7 +369,8 @@ ul a {
         flex-direction: column-reverse;
     }
 
-    .gamer-container {
+    .gamer-container,
+    .play-gamer-container {
         flex-direction: column;
     }
 
@@ -340,7 +390,8 @@ ul a {
         padding: 40px;
     }
 
-    .gamer-info {
+    .gamer-info,
+    .play-gamer-info {
         width: 100%;
         justify-content: center;
         padding: 50px;
@@ -350,6 +401,11 @@ ul a {
     .ellipsis {
         padding-top: 10px;
         margin: 0 auto;
+    }
+
+    .play-gamer-img {
+        width: 80%;
+        margin-left: 40px;
     }
 }
 

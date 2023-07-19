@@ -35,9 +35,20 @@ section {
     padding: 10px 20px;
     color: #FFF;
     border-radius: 50px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
+}
+
+.linear-title {
+    font-size: 48px;
+    font-weight: 700;
+    /* background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%); */
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 /* nav style start here */
@@ -175,12 +186,50 @@ ul a {
 }
 
 /* banner style end here */
+.gamer {
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.gamer-container {
+    display: flex;
+}
+
+.gamer-img {
+    width: 50%;
+    min-height: 400px;
+}
+
+.gamer-img img {
+    width: 100%;
+}
+
+.gamer-info {
+    width: 50%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: end;
+}
+
+.ellipsis {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 400px;
+}
+
+/* gamer style start here */
+
+/* gamer style end here */
 /* responsive design start here */
 /* mobile device */
 @media screen and (max-width: 668px) {
 
     .nav-container,
-    .banner-container {
+    .banner-container,
+    .gamer-container {
         flex-direction: column;
     }
 
@@ -208,9 +257,22 @@ ul a {
         justify-content: center;
     }
 
-    .banner-img {
+    .gamer-info {
+        width: 100%;
+        justify-content: center;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .banner-img,
+    .gamer-img {
         width: 100%;
         padding: 40px;
+    }
+
+    .ellipsis {
+        padding-top: 10px;
+        margin: 0 auto;
     }
 }
 
@@ -225,16 +287,32 @@ ul a {
         flex-direction: column-reverse;
     }
 
+    .gamer-container {
+        flex-direction: column;
+    }
+
     .banner-info {
         width: 100%;
         justify-content: center;
     }
 
-    .banner-img {
+    .banner-img,
+    .gamer-img {
         width: 100%;
         padding: 40px;
     }
 
+    .gamer-info {
+        width: 100%;
+        justify-content: center;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .ellipsis {
+        padding-top: 10px;
+        margin: 0 auto;
+    }
 }
 
 /* responsive design end here */
